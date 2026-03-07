@@ -1,6 +1,9 @@
-import Testing
+import XCTest
 @testable import profesor_kit_shared
 
-@Test func example() async throws {
-    // Write your test here and use APIs like `#expect(...)` to check expected conditions.
+final class profesor_kit_sharedTests: XCTestCase {
+
+    func testSharedVersionIsAvailable() {
+        XCTAssertEqual(ProfesorKitShared.version, "0.1.0")
+    }
 }
